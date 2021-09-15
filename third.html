@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript">
+        var entrada = window.location.search.substr(1);
+    </script>
+    <script src="Operatividad.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Filtro 3</h>
+        <header>
+            <img src="Imagen/escudo.png" alt="computadora" class="imagen" id="tam">
+        </header>
+    <h2>Fecha de nacimiento:  <input type="date" id="fecha" name="trip-start"
+        value="2020-01-01"
+        min="1988-01-01" max="2020-12-31">  </h2>
+    
+    
+    <h2>Lugar de nacimiento: <input type="text" id="nacimiento" size="10" ></h2>
+    <h2>Dirección: <input type="text" id="direccion" size="15"> 
+        Calle: <input type="text" id="calle" size="15"> 
+        N°: <input type="text" id="numero" size="5"> 
+        C.P.: <input type="text" id="codigo" size="8">
+        Localidad: <input type="text" id="localidad" size="15"></h2>
+    <h2>Estado Civil: </h2>
+    <select name="estado" id="estado">
+        <option value="Soltero">Soltero</option>
+        <option value="Casado">Casado</option>
+        <option value="Otro">Otro</option>
+    </select>
+    <h2>Número de teléfono: <input type="text" id="telefono" size="20" ></h2>
+    <h2>Correo electrónico: <input type="email" pattern=".+@globex\.com" id="correo" size="20" ></h2>
+
+    <button onclick="Cuarto(entrada)" id="boton3" >Enviar :)</button>
+
+    
+</body>
+<footer>Alumno: Gonzalez Ramirez Oscar Miguel</footer>
+</html>

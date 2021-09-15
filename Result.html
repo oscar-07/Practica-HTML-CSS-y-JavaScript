@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="Operatividad.js"></script>
+    <title>Validado</title>
+    
+</head>
+<body>
+    <h1>En revision</h>
+        <header>
+            <img src="Imagen/escudo.png" alt="computadora" class="imagen" id="tam">
+        </header>
+    <h2>Nombre: <output id="cajanombre" for="caja"> </output></h2>
+    <h2>Fecha: <output id="cajafecha" for="caja"> </output></h2>
+    <h2>Direccion: <output id="cajadireccion" for="caja"> </output></h2>
+    <h2>Calle: <output id="cajacalle" for="caja"> </output></h2>
+    <h2>Numero: <output id="cajanumero" for="caja"> </output></h2>
+    <h2>Codigo: <output id="cajacodigo" for="caja"> </output></h2>
+    <h2>Localidad: <output id="cajalocalidad" for="caja"> </output></h2>
+    <h2>Numero telefonico: <output id="cajatelefono" for="caja"> </output></h2>
+    <h2>Correo electronico: <output id="cajacorreo" for="caja"> </output></h2>
+    <p>Ha concluido el primer paso, este pendiente de su correo electrónico para recibir la respuesta a su solicitud.</p>
+
+    <script type="text/javascript">
+        var entrada = window.location.search.substr(1);
+        var caja = entrada.split("&");
+        document.getElementById("cajanombre").value = caja[0];
+        document.getElementById("cajafecha").value = caja[1];
+        document.getElementById("cajadireccion").value = caja[2];
+        document.getElementById("cajacalle").value = caja[3];
+        document.getElementById("cajanumero").value = caja[4];
+        document.getElementById("cajacodigo").value = caja[5];
+        document.getElementById("cajalocalidad").value = caja[6];
+        document.getElementById("cajatelefono").value = caja[7];
+        document.getElementById("cajacorreo").value = caja[8];
+    </script>
+
+    <button onclick="Inicio()" id="boton4" >Regresar</button>
+
+</body>
+<footer>Alumno: Gonzalez Ramirez Oscar Miguel</footer>
+</html>

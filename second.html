@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript">
+        var entrada = window.location.search.substr(1);
+    </script>
+    <script src="Operatividad.js"></script>
+    <title>Beca</title>
+</head>
+<body>
+    <h1>Filtro 2</h1>
+    <header>
+        <img src="Imagen/escudo.png" alt="computadora" class="imagen" id="tam">
+    </header>
+    <form>
+        <input type="radio" id="Lic" name="se" value="Licenciatura" onclick="Cajas()">
+        <label for="gen">Licenciatura</label><br>
+        <input type="radio" id="tec" name="se" value="TSU" onclick="Cajas()">
+        <label for="gen">Técnico Superior Universitario (TSU)</label><br><br>
+        <label for="gen" >Recuerda que para el caso de estudiantes de licenciatura,<br> haber cursado al menos 4 semestres del plan de estudios.<br> Para el caso de Técnico Superior Universitario (TSU), haber<br> cursado 2 semestres.</label><br><br>
+        <input type="text" id="semestres" name="semestres" placeholder="N° de semestres. " style="display:none">
+        <h2 >Promedio: <input type="num" id="promedio" size="10" name="num5" style="display:none"></h2><br>
+        
+    </form>
+    <button onclick="Tercero(entrada)" id="boton" style="display:none" >Enviar</button>
+</body>
+<footer>Alumno: Gonzalez Ramirez Oscar Miguel</footer>
+</html>
